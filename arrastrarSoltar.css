@@ -18,3 +18,7 @@
 .element {
   background-color: aquamarine;
 }
+
+.selected {
+  background-color: yellow;
+}

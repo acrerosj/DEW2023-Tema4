@@ -10,20 +10,34 @@
 <body>
   <h1>Arrastrar y soltar</h1>
   <div class="parent">
-    <div class="box" id="box1">
+    <div class="box" id="box1"
+    ondragover="dragOver(event)" 
+    ondrop="drop(event)"
+    >
       <div 
         class="element"
         draggable="true"
         ondragstart="dragStart(event)"
         id='draggable-1'
+        ondragend="dragEnd(event)"
       >
         Arrastrame y suelta
       </div>
+      <div 
+      class="element"
+      draggable="true"
+      ondragstart="dragStart(event)"
+      id='draggable-2'
+      ondragend="dragEnd(event)"
+    >
+      Arrastrame y suelta 2
+    </div>
     </div>
     <div 
       class="box" 
       id="box2"
-      
+      ondragover="dragOver(event)" 
+      ondrop="drop(event)"
     >
 
     </div>
